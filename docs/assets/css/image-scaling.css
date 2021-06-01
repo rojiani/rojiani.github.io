@@ -1,0 +1,64 @@
+/* Image scaling - width is % of page */
+img[alt="scale15"] {
+  width: 15%;
+}
+
+img[alt="scale25"] {
+  width: 25%;
+}
+
+img[alt="scale33"] {
+  width: 33%;
+}
+
+img[alt="scale50"] {
+  width: 50%;
+}
+
+img[alt="scale66"] {
+  width: 66%;
+}
+
+img[alt="scale75"] {
+  width: 75%;
+}
+
+img[alt="scale80"] {
+  width: 80%;
+}
+
+img[alt="scale90"] {
+  width: 90%;
+}
+
+img[alt="x15"] {
+  width: 15%;
+}
+
+img[alt="x25"] {
+  width: 25%;
+}
+
+img[alt="x33"] {
+  width: 33%;
+}
+
+img[alt="x50"] {
+  width: 50%;
+}
+
+img[alt="x66"] {
+  width: 66%;
+}
+
+img[alt="x75"] {
+  width: 75%;
+}
+
+img[alt="x80"] {
+  width: 80%;
+}
+
+img[alt="x90"] {
+  width: 90%;
+}

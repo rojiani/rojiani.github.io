@@ -1,0 +1,105 @@
+# Project information
+site_name: rojiani.github.io
+site_description: Navid Rojiani
+site_author: Navid Rojiani
+docs_dir: docs
+site_dir: site
+site_url: https://github.com/rojiani/rojiani.github.io
+copyright: Copyright &copy; 2021 Navid Rojiani
+
+# Repository
+repo_name: rojiani.github.io
+repo_url: https://github.com/rojiani/rojiani.github.io
+dev_addr: "localhost:3001"
+
+# Theme
+theme:
+  name: "material"
+  language: "en"
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: "Roboto"
+    code: "JetBrains Mono"
+  logo: "assets/images/logo.png"
+  favicon: "assets/images/favicon.ico"
+  features:
+    - navigation.instant
+    - navigation.expand
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.top
+  search:
+    language: "en"
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/rojiani
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/navid-rojiani
+
+extra_css:
+  - "assets/css/extra.css"
+  - "assets/css/image-scaling.css"
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: True
+      guess_lang: True
+      noclasses: False
+      use_pygments: True
+  - footnotes
+  - markdown.extensions.admonition
+  - nl2br
+  - pymdownx.betterem:
+      smart_enable: all
+  - sane_lists
+  - smarty
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: True
+      clickable_checkbox: True
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+# Content
+nav:
+  - index.md
+  # - "About Me":
+      # - "Navid Rojiani": about-me/about-me.md
+      # - "Résumé": about-me/resume.md
