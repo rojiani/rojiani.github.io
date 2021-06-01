@@ -58,11 +58,6 @@ extra_css:
   - "assets/css/extra.css"
   - "assets/css/image-scaling.css"
 
-plugins:
-  - search
-  - minify:
-      minify_html: true
-
 # Extensions
 markdown_extensions:
   - pymdownx.highlight:
