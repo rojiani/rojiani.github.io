@@ -1,0 +1,103 @@
+.md-grid {
+  /* max-width: initial; */
+  max-width: 1440px;
+}
+
+.md-nav {
+  font-size: 0.6rem;
+}
+
+/* Selected page */
+.md-nav__link.md-nav__link--active {
+  font-weight: bold;
+}
+
+/*........ ( Center - Tabs Bar ) ........*/
+.md-tabs__link {
+  font-size: 0.75rem;
+}
+
+.md-tabs__link:hover {
+  font-weight: bold;
+}
+
+/*........ ( Center - Main Content ) ........*/
+/* Type */
+.md-typeset {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+/* Links */
+.md-typeset a {
+  font-weight: bold;
+}
+
+/* Headings */
+.md-typeset h1 {
+  font-weight: bold;
+}
+
+.md-typeset h2 {
+  font-weight: normal;
+}
+
+.md-typeset h5 {
+  font-size: 0.7rem;
+}
+
+/* Code Blocks */
+/* all code, including blocks, inline, tables */
+
+/*  code blocks only - excludes tables, inline */
+/*
+.md-typeset .codehilite code,
+.md-typeset .codehilite pre,
+.md-typeset .highlight code,
+.md-typeset .highlight pre {
+  font-family: "JetBrains Mono", "Liga Roboto Mono", "Fira Code", "LigaSrc Pro",
+    "SF Mono", "IBM Plex Mono", monospace !important;
+}
+
+code,
+kbd,
+pre {
+  font-family: "JetBrains Mono", "Liga Roboto Mono", "Fira Code", "LigaSrc Pro",
+    "SF Mono", "IBM Plex Mono", monospace !important;
+} */
+
+/* Tables */
+
+th {
+  font-weight: bold;
+}
+
+/* Lists */
+.md-typeset ol li,
+.md-typeset ul li {
+  margin-bottom: 0.25em;
+}
+
+.md-typeset ol li ol,
+.md-typeset ol li ul,
+.md-typeset ul li ol,
+.md-typeset ul li ul {
+  margin: 0.25em 0 0.25em 0.625em;
+}
+
+/* Admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.7rem;
+}
+
+/* Critic */
+.md-typeset mark {
+  background-color: #bbd6fb;
+  box-shadow: 0.25em 0 0 #bbd6fb, -0.25em 0 0 #bbd6fb;
+}
+
+/*...... ( Right - Page Contents - .md-nav--secondary ) ......*/
+.md-nav__link {
+  margin-top: 0.25em;
+}
