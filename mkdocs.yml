@@ -10,7 +10,6 @@ copyright: Copyright &copy; 2021 Navid Rojiani
 # Repository
 repo_name: rojiani.github.io
 repo_url: https://github.com/rojiani/rojiani.github.io
-dev_addr: "localhost:3001"
 
 # Theme
 theme:
@@ -24,7 +23,7 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: "(prefers-color-scheme: light)"
       scheme: slate
       primary: indigo
       accent: indigo
@@ -37,14 +36,13 @@ theme:
   logo: "assets/images/logo.png"
   favicon: "assets/images/favicon.ico"
   features:
+    - content.tabs.link
     - navigation.instant
     - navigation.expand
-    # - navigation.sections
+    - navigation.sections
     - navigation.tabs
     - navigation.tracking
     - navigation.top
-  search:
-    language: "en"
 
 # Customization
 extra:
@@ -58,37 +56,53 @@ extra_css:
   - "assets/css/extra.css"
   - "assets/css/image-scaling.css"
 
+plugins:
+  - search:
+      lang: "en"
+  - minify:
+      minify_html: true
+
 # Extensions
 markdown_extensions:
+  - abbr
+  - admonition
+  - def_list
+  - footnotes
+#   - nl2br
+  - md_in_html
+#   - sane_lists
+#   - smarty
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+#   - pymdownx.emoji:
+#       emoji_index: !!python/name:materialx.emoji.twemoji
+#       emoji_generator: !!python/name:materialx.emoji.to_svg1
   - pymdownx.highlight:
+      anchor_linenums: true
       linenums: True
       guess_lang: True
       noclasses: False
       use_pygments: True
-  - footnotes
-  - markdown.extensions.admonition
-  - nl2br
-  - pymdownx.betterem:
-      smart_enable: all
-  - sane_lists
-  - smarty
-  - pymdownx.arithmatex
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.keys
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.superfences:
+        custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:
       custom_checkbox: True
       clickable_checkbox: True
   - pymdownx.tilde
+  - tables
   - toc:
       permalink: true
 

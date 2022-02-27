@@ -7,7 +7,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ## Résumé
 
-[Résumé (May 2021)](about-me/navid-rojiani-resume-may-2021.pdf)
+[Résumé (Feb. 2022)](about-me/Resume-Navid-Rojiani.pdf)
 
 ## Contact
 
